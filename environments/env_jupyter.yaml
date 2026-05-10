@@ -1,9 +1,10 @@
 # environment.yml
 name: jupyter
 channels:
-  - conda-forge
+  - defaults
 dependencies:
   - python
+  # jupyter related dependencies
   - jupyter
   - nbclassic
   - nb_conda_kernels

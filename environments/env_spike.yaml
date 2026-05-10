@@ -1,9 +1,10 @@
 # environment.yml
 name: spike
 channels:
-  - conda-forge
+  - defaults
 dependencies:
   - python
+  - pip
   # general scientific python code
   - numpy
   - scipy

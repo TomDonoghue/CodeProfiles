@@ -1,9 +1,10 @@
 # environment.yml
 name: literature
 channels:
-  - conda-forge
+  - defaults
 dependencies:
   - python
+  - pip
   # general scientific python code
   - numpy
   - matplotlib
@@ -13,6 +14,12 @@ dependencies:
   - requests
   - lxml
   - beautifulsoup4
+  # Code maintenance & testing
+  - pytest
+  - coverage
+  - pylint
+  # Jupyter related code
+  - ipykernel
   - pip:
     - wordcloud
     - lisc
