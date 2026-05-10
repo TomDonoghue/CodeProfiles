@@ -1,0 +1,18 @@
+# environment.yml
+name: literature
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # general scientific python code
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
+  # internet requests
+  - requests
+  - lxml
+  - beautifulsoup4
+  - pip:
+    - wordcloud
+    - lisc

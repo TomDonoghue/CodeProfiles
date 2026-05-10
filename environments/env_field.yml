@@ -1,0 +1,21 @@
+# environment.yml
+name: field
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # general scientific python code
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  # Code maintenance & testing
+  - pytest
+  - coverage
+  - pylint
+  # Jupyter related code
+  - ipykernel
+  - pip:
+    - specparam
+    - neurodsp

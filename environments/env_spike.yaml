@@ -1,0 +1,30 @@
+# environment.yml
+name: spike
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # general scientific python code
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - scikit-learn
+  # spike file related code
+  - pyyaml
+  - h5py
+  # Code maintenance & testing
+  - pytest
+  - coverage
+  - pylint
+  # Jupyter related code
+  - ipykernel
+  - pip:
+    # pypi optional dependencies
+    - neo
+    - pynwb
+    # Our tools
+    - hsntools
+    - spiketools
