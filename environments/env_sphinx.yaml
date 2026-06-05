@@ -1,0 +1,26 @@
+# environment.yml
+name: sphinx
+channels:
+  - defaults
+dependencies:
+  - python
+  - pip
+  # general scientific python code
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  # sphinx & related
+  - sphinx
+  - numpydoc
+  - pip:
+    # pip installs for docsite helpers
+    - sphinx_gallery
+    - sphinx_bootstrap_theme
+    - sphinx-copybutton
+    # pip installs for modules to make docsites for
+    - specparam
+    - neurodsp
+    - lisc
+    - hsntoools
+    - spiketools
