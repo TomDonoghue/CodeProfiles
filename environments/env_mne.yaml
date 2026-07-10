@@ -1,0 +1,18 @@
+# environment.yml
+name: mne
+channels:
+  - defaults
+dependencies:
+  - python
+  - pip
+  # general scientific python code (mne-dependencies)
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  # Jupyter related code
+  - ipykernel
+  # mne & any other dependencies
+  - pip:
+    - mne
